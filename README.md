@@ -1,6 +1,8 @@
 # Leaflet-map-auto-move
 
-Leaflet control plugin for auto-move when mouse close to map borders - Helpful when drawing
+Leaflet control plugin for auto-move when mouse close to map borders - Helpful when drawing.
+
+Live Demo: https://yvnino.github.io/Leaflet-map-auto-move/example/
 
 ## Getting Started
 
