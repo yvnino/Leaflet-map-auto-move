@@ -1,0 +1,18 @@
+body {
+	background:#ced3d3;
+	color:#285585;
+	font-family:Arial;
+}
+
+h2, h3, h4 {
+	white-space:nowrap;
+	margin:1em 0 0 0;
+}
+
+#map {
+	margin-top: 40px;
+	border-radius: 1px;
+	box-shadow: 0 0 8px #999;
+	width: 800px;
+	height: 400px;
+}

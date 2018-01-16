@@ -1,0 +1,18 @@
+{
+  "name": "leaflet-map-automove",
+  "version": "1.0.0",
+  "description": "A leaflet control plugin for map auto move with mouse next to map borders",
+  "author": {
+    "name": "Yoav Nino",
+    "email": "yvnino@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "maps",
+    "leaflet",
+	  "leaflet plugin"
+  ],
+  "dependencies": {
+    "leaflet": "*"
+  }
+}

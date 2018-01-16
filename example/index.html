@@ -1,0 +1,43 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Leaflet Control Map Automove - Simple Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.0/leaflet.css" />
+    <link rel="stylesheet" href="./style.css" />    
+</head>
+
+<body>
+    <h3 style="">
+        <div>Leaflet.Control.Automove</div>
+    </h3>
+    
+    <div> Simple Example: Map Automove</div>
+    <div id="map"></div>
+    <button id="toggle-automove-start">Start AutoMove</button>
+    <button id="toggle-automove-stop">Stop AutoMove</button>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.0/leaflet.js"></script>
+    <script src="../src/leaflet-map-automove.js"></script>
+    <script>
+        var map = new L.Map('map', { zoom: 12, center: new L.latLng([26.10, -80.18]) });
+        window.map = map;
+        map.addLayer(new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'));	//base layer
+        var automove = new L.Control.Automove({ speed: 310 });
+        automove.addTo(map);
+        window.automove = automove;
+        var startBtn = document.getElementById('toggle-automove-start');
+        startBtn.addEventListener('click', function(e){
+            automove.toggleAutoMapMove(true);
+            console.log('toggled');
+        })
+        var stopBtn = document.getElementById('toggle-automove-stop');
+        stopBtn.addEventListener('click', function(e){
+            automove.toggleAutoMapMove(false);
+            console.log('toggled');
+        })
+    </script>
+
+</body>
+
+</html>
