@@ -15,6 +15,6 @@ automoveController.addTo(map);
 Entering auto mode:
 
 ```
-automove.toggleAutoMapMove(true);
+automoveController.toggleAutoMapMove(true);
 ```
 
